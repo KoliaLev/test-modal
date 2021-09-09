@@ -1,0 +1,54 @@
+@keyframes showBackdrop {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes showModal {
+  0%{
+    opacity: 0;
+    transform: translateY(500px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+.backdrop{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.24);
+
+  animation: showBackDrop .3s ease-out;
+}
+
+.modal{
+  border-radius: 5px;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.521);
+  animation: showModal .3s ease-out;
+}
+
+.modal__header{  
+  padding: 20px;
+  border-bottom: 1px solid rgb(75, 51, 46);
+}
+
+.modal__header h3{  
+  margin: 0;
+}
+
+.modal__body{
+  padding: 20px;
+}
