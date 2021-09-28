@@ -3,6 +3,7 @@ import { ModalContext } from "../../contexts";
 
 import "./style.css"
 // sote text for testing. it needs to remove
+// test 2 branch
 export const Modal = (props) => {
   const { title, children } = props
   const { closeModal } = useContext(ModalContext)
