@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { ModalContext } from "../../contexts";
 
 import "./style.css"
-
+// sote text for testing. it needs to remove
 export const Modal = (props) => {
   const { title, children } = props
   const { closeModal } = useContext(ModalContext)
